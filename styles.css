@@ -107,7 +107,7 @@ nav .nav-link::before {
   content: "";
   position: absolute;
   height: 3px;
-  right: -20px;
+  right: -50px;
   bottom: -10px;
   left: 0;
   background: linear-gradient(to right, var(--primary-color1) 0%, var(--primary-color2) 50%);
