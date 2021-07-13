@@ -140,6 +140,7 @@ nav .nav-link:hover::before {
     display: flex;
     position: relative;
     top: -800px;
+    padding: 0 10%;
 }
 
 /* Grid */
@@ -149,8 +150,7 @@ nav .nav-link:hover::before {
 }
 
 .head-item1 {
-    width: 100%;
-    margin-left: 20%;
+    max-width: calc(80vw / 2);
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     color: white;
@@ -161,9 +161,9 @@ nav .nav-link:hover::before {
     width: 100%;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    margin-left: 20%;
 }
 
 .img-smartphone-hero {
-    width: 60%;
+    max-width: 80%;
+    margin: 0 auto;
 }
