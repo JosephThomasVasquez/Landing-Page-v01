@@ -3,6 +3,11 @@
   --primary-color2: #2227b7;
 }
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,9 +15,82 @@ body {
 
 /* NAVBAR ----------------------------------------------- */
 nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding: 20px;
   margin: 0;
-  background-color: var(--primary-color2);
+}
+
+nav .nav-title {
+  position: relative;
+  padding: 0 1.5em;
+  margin: 0 10px;
+  color: var(--primary-color1);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+nav .nav-title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--primary-color1);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+nav .nav-title:hover::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--primary-color1);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+nav .nav-links {
+  display: flex;
+  text-align: right;
+}
+
+nav .nav-link {
+  position: relative;
+  padding: 0 1.5em;
+  margin: 0 10px;
+  color: var(--primary-color1);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+nav .nav-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--primary-color1);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+nav .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--primary-color1);
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 /* HEADING SECTION -------------------------------------- */
