@@ -150,10 +150,20 @@ nav .nav-link:hover::before {
 
 .head-item1 {
     width: 100%;
+    margin-left: 20%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    color: white;
+    font-size: 2em;
+}
+
+.head-item2 {
+    width: 100%;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
+    margin-left: 20%;
 }
 
 .img-smartphone-hero {
-    width: 40%;
+    width: 60%;
 }
