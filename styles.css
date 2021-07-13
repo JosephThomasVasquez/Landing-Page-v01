@@ -136,8 +136,14 @@ nav .nav-link:hover::before {
   object-fit: cover;
 }
 
-/* Grid */
 .section-headline {
+    display: flex;
+    position: relative;
+    top: -800px;
+}
+
+/* Grid */
+.content-headline {
     display: grid;
     grid-template-rows: (2, 1fr);
 }
