@@ -85,6 +85,10 @@ ul {
     margin-right: 1.5em;
 }
 
+li {
+    list-style: none;
+}
+
 nav .nav-link {
   position: relative;
   padding: 0 1.5em;
