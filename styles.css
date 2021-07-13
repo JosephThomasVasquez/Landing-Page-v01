@@ -14,6 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 /* NAVBAR ----------------------------------------------- */
@@ -25,10 +26,15 @@ nav {
   margin: 0;
 }
 
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav .nav-title {
   position: relative;
   padding: 0 1.5em;
-  margin: 0 10px;
+  margin: auto 0;
   color: var(--primary-color1);
   text-decoration: none;
   vertical-align: middle;
@@ -41,7 +47,8 @@ nav .nav-title::before {
   right: 0;
   bottom: -10px;
   left: 0;
-  background-color: var(--primary-color1);
+  background: linear-gradient(to right, var(--primary-color1) 0%, var(--primary-color2) 50%);
+  border-radius: 2px;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -53,14 +60,22 @@ nav .nav-title:hover::before {
   right: 0;
   bottom: -10px;
   left: 0;
-  background-color: var(--primary-color1);
+  background: linear-gradient(to right, var(--primary-color1) 25%, var(--primary-color2) 100%);
+  border-radius: 2px;
   opacity: 1;
   transition: all 0.3s;
 }
 
 nav .nav-links {
   display: flex;
-  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul {        
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
 }
 
 nav .nav-link {
@@ -79,7 +94,8 @@ nav .nav-link::before {
   right: 0;
   bottom: -10px;
   left: 0;
-  background-color: var(--primary-color1);
+  background: linear-gradient(to right, var(--primary-color1) 0%, var(--primary-color2) 50%);
+  border-radius: 2px;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -91,7 +107,8 @@ nav .nav-link:hover::before {
   right: 0;
   bottom: -10px;
   left: 0;
-  background-color: var(--primary-color1);
+  background: linear-gradient(to right, var(--primary-color1) 25%, var(--primary-color2) 100%);
+  border-radius: 2px;
   opacity: 1;
   transition: all 0.3s;
 }
@@ -99,6 +116,6 @@ nav .nav-link:hover::before {
 /* HEADING SECTION -------------------------------------- */
 .img-landing-hero {
   width: 100%;
-  height: 600px;
+  height: 90vh;
   object-fit: cover;
 }
