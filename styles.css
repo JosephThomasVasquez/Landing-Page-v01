@@ -184,6 +184,10 @@ nav .nav-link:hover::before {
   margin: 0 auto;
 }
 
+.section-features {
+  
+}
+
 /* Grid */
 .content-features {
   display: grid;
@@ -215,4 +219,8 @@ nav .nav-link:hover::before {
 .feature-item3 {
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
+}
+
+.feature-h1 {
+    text-align: center;
 }
